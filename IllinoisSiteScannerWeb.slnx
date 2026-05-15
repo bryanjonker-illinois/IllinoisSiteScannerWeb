@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="IllinoisSiteScannerWeb.Data/IllinoisSiteScannerWeb.Data.csproj" />
+  <Project Path="IllinoisSiteScannerWeb/IllinoisSiteScannerWeb.csproj" />
+</Solution>

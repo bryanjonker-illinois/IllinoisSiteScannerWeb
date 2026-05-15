@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://cdn.brand.illinois.edu/favicon.ico">
+    <link rel="apple-touch-icon" href="https://cdn.brand.illinois.edu/touch-icon-40x40.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://cdn.brand.illinois.edu/touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://cdn.brand.illinois.edu/touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.brand.illinois.edu/touch-icon-180x180.png">
+    <link rel="dns-prefetch" href="//cdn.toolkit.illinois.edu">
+    <link rel="dns-prefetch" href="//cdn.disability.illinois.edu">
+    <link rel="stylesheet" href="//cdn.toolkit.illinois.edu/3/toolkit.css">
+    <script type="module" src="//cdn.toolkit.illinois.edu/3/toolkit.js"></script>
+    <script src="//cdn.disability.illinois.edu/skipto.min.js"></script>
+    <link href="//contrib.webtheme.illinois.edu/ils-input/input3.css" rel="stylesheet">
+    <script>var SkipToConfig = { 'settings': { 'skipTo': { colorTheme: 'illinois' } } };</script>
+    <title>@ViewData["Title"] | Illinois</title>
+    <style>
+        ul li span {
+        font-weight: bold;
+        display: inline-block;
+        width: 220px;
+        }
+    </style>
+</head>
+<body style="margin: 0;">
+    <ilw-page>
+        <ilw-header slot="header">
+            <a slot="primary-unit" href="https://wigg.illinois.edu/">Web Implementation Guidelines Group</a>
+            <a slot="site-name" href="/index.html">Website Platform Check</a>
+        </ilw-header>
+        <main>
+            @RenderBody()
+        </main>
+        <ilw-footer slot="footer">
+            <a slot="primary-unit" href="https://wigg.illinois.edu/">Web Implementation Guidelines Group</a>
+            <a slot="site-name" href="/index.html">Website Platform Check</a>
+        </ilw-footer>
+    </ilw-page>
+</body>
+</html>

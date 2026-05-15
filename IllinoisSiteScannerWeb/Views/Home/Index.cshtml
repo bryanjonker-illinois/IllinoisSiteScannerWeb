@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Website Platform Check | Illinois";
+}
+
+<ilw-content width="page">
+    <h1>Website Platform Check</h1>
+    <p>This is a simple tool used to check the properties of a website.</p>
+    <div class="ils-input-entry">
+        <label for="url">URL to check:</label>
+        <input id="url" type="text" class="ils-input-long" value="@Model.WebsiteInformation.Url">
+    </div>
+    <button class="ilw-button" onclick="window.location.href = '/?url=' + encodeURIComponent(document.getElementById('url').value);">Check Site</button>
+    <ilw-spacer></ilw-spacer>
+</ilw-content>
+@if (Model.WebsiteInformation.Url != "")
+{
+    <ilw-content width="page">
+    <h2>Results</h2>
+    @if (Model.WebsiteInformation.IsSuccessful)
+    {
+        <ul>
+            <li><span>Url:</span> <a href="@Model.WebsiteInformation.Url" target="_blank">@Model.WebsiteInformation.Url</a></li>
+            <li><span>Hostname:</span> @Model.WebsiteInformation.Host</li>
+            <li><span>Absolute URI:</span> @Model.WebsiteInformation.AbsoluteUri</li>
+            <li><span>IP Address:</span> @Model.WebsiteInformation.IpAddress</li>
+            <li><span>PIE / cPanel / Other:</span> @Model.WebsiteInformation.IpInformation</li>
+            <li><span>CMS Information:</span> @Model.WebsiteInformation.CmsInformation</li>
+            <li><span>New Toolkit Information:</span> @Model.WebsiteInformation.NewToolkit</li>
+            <li><span>Old Toolkit Information:</span> @Model.WebsiteInformation.OldToolkit</li>
+            <li><span>H1 Information:</span> @Model.WebsiteInformation.HeaderInformation</li>
+            <li><span>Server Information:</span> @Model.WebsiteInformation.ServerInformation</li>
+            <li><span>Primary Site:</span> @Model.WebsiteInformation.PrimarySiteInformation</li>
+            <li><span>Parent Site:</span> @Model.WebsiteInformation.ParentSiteInformation</li>
+        </ul>
+
+    }
+    @if (!Model.WebsiteInformation.IsSuccessful)
+    {
+        <ul>
+            <li><span>Url:</span> <a href="@Model.WebsiteInformation.Url" target="_blank">@Model.WebsiteInformation.Url</a></li>
+            <li><span>Error:</span> @Model.WebsiteInformation.ErrorMessage</li>
+        </ul>
+    }
+    </ilw-content>
+    <ilw-spacer></ilw-spacer>
+}
