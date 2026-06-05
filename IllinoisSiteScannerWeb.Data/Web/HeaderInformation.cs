@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace IllinoisSiteScannerWeb.Data {
+namespace IllinoisSiteScannerWeb.Data.Web {
 
     internal static class HeaderInformation {
 

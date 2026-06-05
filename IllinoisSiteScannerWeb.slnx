@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
   <Project Path="IllinoisSiteScannerWeb.Data/IllinoisSiteScannerWeb.Data.csproj" />
+  <Project Path="IllinoisSiteScannerWeb.Emergency/IllinoisSiteScannerWeb.Emergency.csproj" Id="e8c5a0de-bd2d-44c6-b0cf-b3c160bd5b67" />
   <Project Path="IllinoisSiteScannerWeb/IllinoisSiteScannerWeb.csproj" />
 </Solution>

@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace IllinoisSiteScannerWeb.Data {
+namespace IllinoisSiteScannerWeb.Data.Web {
     internal static class TagRemover {
 
         internal static string RemoveTags(string html) {

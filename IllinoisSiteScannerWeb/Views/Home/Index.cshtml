@@ -26,7 +26,7 @@
             <li><span>Hostname:</span> @Model.WebsiteInformation.Host</li>
             <li><span>Absolute URI:</span> @Model.WebsiteInformation.AbsoluteUri</li>
             <li><span>IP Address:</span> @Model.WebsiteInformation.IpAddress</li>
-            <li><span>PIE / cPanel / Other:</span> @Model.WebsiteInformation.IpInformation</li>
+            <li><span>Hosting Information:</span> @Model.WebsiteInformation.HostingInformation</li>
             <li><span>CMS Information:</span> @Model.WebsiteInformation.CmsInformation</li>
             <li><span>New Toolkit Information:</span> @Model.WebsiteInformation.NewToolkit</li>
             <li><span>Old Toolkit Information:</span> @Model.WebsiteInformation.OldToolkit</li>
@@ -35,7 +35,6 @@
             <li><span>Primary Site:</span> @Model.WebsiteInformation.PrimarySiteInformation</li>
             <li><span>Parent Site:</span> @Model.WebsiteInformation.ParentSiteInformation</li>
         </ul>
-
     }
     @if (!Model.WebsiteInformation.IsSuccessful)
     {

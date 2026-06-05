@@ -4,7 +4,7 @@
         public string Host { get; set; } = "";
         public string AbsoluteUri { get; set; } = "";
         public string IpAddress { get; set; } = "";
-        public string IpInformation { get; set; } = "";
+        public string HostingInformation { get; set; } = "";
         public string CmsInformation { get; set; } = "";
         public string NewToolkit { get; set; } = "";
         public string OldToolkit { get; set; } = "";

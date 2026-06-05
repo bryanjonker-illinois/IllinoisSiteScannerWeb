@@ -1,4 +1,4 @@
-﻿namespace IllinoisSiteScannerWeb.Data {
+﻿namespace IllinoisSiteScannerWeb.Data.Web {
 
     internal static class ServerInformation {
 

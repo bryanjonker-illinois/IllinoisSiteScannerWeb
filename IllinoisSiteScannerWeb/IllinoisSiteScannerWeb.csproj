@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IllinoisSiteScannerWeb.Data\IllinoisSiteScannerWeb.Data.csproj" />
+    <ProjectReference Include="..\IllinoisSiteScannerWeb.Emergency\IllinoisSiteScannerWeb.Emergency.csproj" />
   </ItemGroup>
 
 </Project>

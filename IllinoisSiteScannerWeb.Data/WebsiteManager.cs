@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using IllinoisSiteScannerWeb.Data.Web;
+using System.Net;
 
 namespace IllinoisSiteScannerWeb.Data {
     public class WebsiteManager {
@@ -33,7 +34,7 @@ namespace IllinoisSiteScannerWeb.Data {
                 returnValue.AbsoluteUri = response?.RequestMessage?.RequestUri?.AbsoluteUri ?? myUri.AbsoluteUri;
                 returnValue.Host = response?.RequestMessage?.RequestUri?.Host ?? myUri.Host;
                 returnValue.IpAddress = ip.ToString();
-                returnValue.IpInformation = IpInformation.Check(ip.ToString(), response?.RequestMessage?.RequestUri?.Host ?? myUri.Host);
+                returnValue.HostingInformation = HostingInformation.Check(ip.ToString(), response?.RequestMessage?.RequestUri?.Host ?? myUri.Host);
                 returnValue.CmsInformation = CmsInformation.Check(html, ip.ToString());
                 returnValue.ServerInformation = ServerInformation.Check(response?.Headers?.Server?.ToString() ?? "");
                 var (oldToolkit, newToolkit) = ToolkitInformation.Check(html);
